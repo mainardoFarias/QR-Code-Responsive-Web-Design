@@ -1,0 +1,101 @@
+/* Removing the browser's default properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the initial properties */
+
+:root {
+
+    /*Colors*/
+    --white: #ffffff;
+    --light-gray:#d6e2f0;
+    --grayish-blue:#7b879d;
+    --dark-blue: #1f3251;
+
+
+    /*Font Weights*/
+    --font-weight1: 400;
+    --font-weight2: 700;
+
+    /*Font Size*/
+    font-size: 15px;
+    
+    /*Font Family*/
+    /*font-family: 'Outfit', sans-serif;*/
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code img {
+    width: 90%;
+    margin: 1.2rem;
+    border-radius: 1rem;
+}
+
+.para-1 {
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+
+.para-2 {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1rem;
+    color: var(--grayish-blue);
+}
+
+@media (max-width: 999px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 414px) {
+    .container {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 85%;
+    }
+}
+
